@@ -1,7 +1,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="com.totus-labs.base64imagesaverplugin"
-    version="0.7.0">
+    version="0.8.0">
 
     <name>Base64ImageSaverPlugin</name>
 
@@ -30,10 +30,6 @@
             </feature>
         </config-file>
 
-<!--
-        <header-file src="src/ios/Base64ImageSaverPlugin.h" />
--->
-
         <source-file src="src/ios/Base64ImageSaverPlugin.swift" />
 
     </platform>
@@ -56,19 +52,4 @@
 
     </platform>
 
-    <!-- wp8 -->
-    <platform name="wp8">
-        <config-file target="config.xml" parent="/*">
-            <feature name="Base64ImageSaverPlugin">
-                <param name="wp-package" value="Base64ImageSaverPlugin"/>
-                <param name="onload" value="true" />
-            </feature>
-        </config-file>
-        
-        <config-file target="Properties/WMAppManifest.xml" parent="/Deployment/App/Capabilities">
-            <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
-        </config-file>
-
-        <source-file src="src/wp8/Base64ImageSaverPlugin.cs" />
-    </platform>
 </plugin>
